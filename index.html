@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping List App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping List</h1>
+        <form id="shopping-form">
+            <select id="item-type">
+                <option value="" selected disabled hidden>Pilih Barang</option>
+                <option value="pencil-case">Tempat Pensil</option>
+                <option value="pen">Pulpen</option>
+                <option value="eraser">Penghapus</option>
+                <option value="ruler">Penggaris</option>
+                <option value="pencil">Pensil</option>
+            </select>
+            <input type="text" id="item" placeholder="Jumlah Item" required>
+            <button id="submit" type="submit">Add Item</button>
+            <button id="update" type="updates">Update Item</button>
+        </form>
+        <ul id="shopping-list"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
